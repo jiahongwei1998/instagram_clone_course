@@ -1,4 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:github_sign_in_plus/github_sign_in_plus.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:instagram_clone_course/state/auth/constants/constants.dart';
 import 'package:instagram_clone_course/state/auth/models/auth_result.dart';
@@ -37,6 +39,26 @@ class Authenticator {
       return AuthResult.success;
     } catch (e) {
       return AuthResult.failure;
+    }
+  }
+
+  Future<AuthResult> loginWithGithub(BuildContext context) async {
+    final gitHubSignIn = GitHubSignIn(
+      clientId: '3ab49e4175213dfcde09',
+      clientSecret: '2ba7f4a07073fc087ebdae06ce69617317f58f55',
+      redirectUrl:
+          'https://instagram-clone-course-jhw.firebaseapp.com/__/auth/handler',
+      title: 'GitHub Connection',
+      centerTitle: false,
+    );
+    final result = await gitHubSignIn.signIn(context);
+    switch (result.status) {
+      case GitHubSignInResultStatus.ok:
+        return AuthResult.success;
+      case GitHubSignInResultStatus.cancelled:
+        return AuthResult.aborted;
+      case GitHubSignInResultStatus.failed:
+        return AuthResult.failure;
     }
   }
 }

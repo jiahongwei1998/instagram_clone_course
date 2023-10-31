@@ -59,7 +59,14 @@ class HomePage extends StatelessWidget {
               result.log();
             },
             child: const Text('Sign In with Google'),
-          )
+          ),
+          TextButton(
+            onPressed: () async {
+              final result = await Authenticator().loginWithGithub(context);
+              result.log();
+            },
+            child: const Text('Sign In with Github'),
+          ),
         ],
       ),
     );

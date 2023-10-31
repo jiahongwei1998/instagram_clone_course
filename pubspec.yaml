@@ -52,6 +52,7 @@ dependencies:
   lottie: ^2.7.0
   share_plus: ^7.2.1
   url_launcher: ^6.2.1
+  github_sign_in_plus: ^0.0.2
 
 dev_dependencies:
   flutter_test:

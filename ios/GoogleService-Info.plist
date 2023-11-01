@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>327613477304-m3qf62pbd33k4dupfcvldoct34op8s71.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.327613477304-m3qf62pbd33k4dupfcvldoct34op8s71</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>327613477304-8uvlv0oqveq9b0ugr4jojhiinj0s2i1i.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCNCJg-C7tTBFbr0gX8pkEJtKQtMjJqrgA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>327613477304</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>dev.hjia.instagramCloneCourse</string>
+	<key>PROJECT_ID</key>
+	<string>instagram-clone-course-jhw</string>
+	<key>STORAGE_BUCKET</key>
+	<string>instagram-clone-course-jhw.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:327613477304:ios:ed753fa66096b48123df4d</string>
+</dict>
+</plist>

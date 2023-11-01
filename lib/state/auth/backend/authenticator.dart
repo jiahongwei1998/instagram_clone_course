@@ -6,6 +6,7 @@ import 'package:instagram_clone_course/state/auth/constants/constants.dart';
 import 'package:instagram_clone_course/state/auth/models/auth_result.dart';
 import 'package:instagram_clone_course/state/posts/typedefs/user_id.dart';
 
+// https://firebase.flutter.dev/docs/auth/social/
 class Authenticator {
   UserId? get userId => FirebaseAuth.instance.currentUser?.uid;
   bool get isAlreadyLoggedIn => userId != null;
@@ -53,14 +54,25 @@ class Authenticator {
       title: 'GitHub Connection',
       centerTitle: false,
     );
+    // Trigger the sign-in flow
     final result = await gitHubSignIn.signIn(context);
-    switch (result.status) {
-      case GitHubSignInResultStatus.ok:
-        return AuthResult.success;
-      case GitHubSignInResultStatus.cancelled:
-        return AuthResult.aborted;
-      case GitHubSignInResultStatus.failed:
-        return AuthResult.failure;
+
+    if (result.token == null ||
+        result.status == GitHubSignInResultStatus.failed) {
+      return AuthResult.failure;
+    }
+    if (result.status == GitHubSignInResultStatus.cancelled) {
+      return AuthResult.aborted;
+    }
+
+    // Create a credential from the access token
+    final oauthCredentials = GithubAuthProvider.credential(result.token!);
+
+    try {
+      await FirebaseAuth.instance.signInWithCredential(oauthCredentials);
+      return AuthResult.success;
+    } catch (e) {
+      return AuthResult.failure;
     }
   }
 }

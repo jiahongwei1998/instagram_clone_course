@@ -91,7 +91,7 @@ class LoginView extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Main View'),
+        title: const Text('Login View'),
       ),
       body: Column(
         children: [

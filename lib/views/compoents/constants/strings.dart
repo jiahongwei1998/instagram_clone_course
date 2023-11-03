@@ -19,6 +19,16 @@ class Strings {
   static const people = 'people';
   static const likedThis = 'liked this';
 
+  static const delete = 'Delete';
+  static const areYouSureYouWantToDeleteThis =
+      'Are you sure you want to delete this?';
+
+  static const logOut = 'Log out';
+  static const areYouSureThatYouWantToLogOutOfTheApp =
+      'Are you sure that you want to log out of the app?';
+
+  static const cancel = 'Cancel';
+
   static const appName = 'Instant-gram!';
   static const welcomeToAppName = 'Welcome to ${Strings.appName}';
   static const youHaveNoPosts =

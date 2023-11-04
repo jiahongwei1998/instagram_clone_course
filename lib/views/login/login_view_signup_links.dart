@@ -20,7 +20,7 @@ class LoginViewSignupLink extends StatelessWidget {
           text: Strings.signUpOn,
         ),
         BaseText.link(
-          text: Strings.facebook,
+          text: Strings.github,
           onTapped: () {
             launchUrl(
               Uri.parse(Strings.facebookSignupUrl),

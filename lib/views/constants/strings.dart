@@ -10,7 +10,7 @@ class Strings {
       "Nobody seems to have made any posts yet. Why don't you take the first step and upload your first post?!";
   static const enterYourSearchTerm =
       'Enter your search term in order go get started. You can search in the description of all posts available in the system';
-  static const facebook = 'Facebook';
+  static const github = 'Github';
   static const facebookSignupUrl = 'https://www.facebook.com/signup';
   static const google = 'Google';
   static const googleSignupUrl = 'https://accounts.google.com/signup';

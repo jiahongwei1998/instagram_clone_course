@@ -61,19 +61,16 @@ class LoadingScreen {
                     mainAxisSize: MainAxisSize.min,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(
-                        height: 10,
-                      ),
+                      const SizedBox(height: 10),
                       const CircularProgressIndicator(),
-                      const SizedBox(
-                        height: 10,
-                      ),
+                      const SizedBox(height: 10),
                       StreamBuilder(
                           stream: textController.stream,
                           builder: (context, snapshot) {
                             if (snapshot.hasData) {
                               return Text(
-                                snapshot.requireData,
+                                snapshot.data!,
+                                textAlign: TextAlign.center,
                                 style: Theme.of(context)
                                     .textTheme
                                     .bodyMedium

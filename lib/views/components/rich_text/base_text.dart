@@ -1,6 +1,6 @@
 import 'package:flutter/foundation.dart' show VoidCallback, immutable;
 import 'package:flutter/material.dart' show TextStyle, Colors, TextDecoration;
-import 'package:instagram_clone_course/views/compoents/rich_text/link_text.dart';
+import 'package:instagram_clone_course/views/components/rich_text/link_text.dart';
 
 @immutable
 class BaseText {

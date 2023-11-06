@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_course/views/compoents/rich_text/base_text.dart';
-import 'package:instagram_clone_course/views/compoents/rich_text/rich_text_widget.dart';
+import 'package:instagram_clone_course/views/components/rich_text/base_text.dart';
+import 'package:instagram_clone_course/views/components/rich_text/rich_text_widget.dart';
 import 'package:instagram_clone_course/views/constants/strings.dart';
 import 'package:url_launcher/url_launcher.dart';
 

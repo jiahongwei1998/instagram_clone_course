@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_course/views/compoents/animations/models/lottie_animation.dart';
+import 'package:instagram_clone_course/views/components/animations/models/lottie_animation.dart';
 import 'package:lottie/lottie.dart';
 
 class LottieAnimationView extends StatelessWidget {

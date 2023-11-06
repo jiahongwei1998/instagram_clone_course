@@ -4,7 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone_course/state/auth/models/auth_result.dart';
 import 'package:instagram_clone_course/state/auth/providers/auth_state_provider.dart';
 import 'package:instagram_clone_course/state/providers/is_loading_pvovider.dart';
-import 'package:instagram_clone_course/views/compoents/loading/loading_screen.dart';
+import 'package:instagram_clone_course/views/components/loading/loading_screen.dart';
 import 'package:instagram_clone_course/views/login/login_view.dart';
 import 'package:instagram_clone_course/views/main/main_view.dart';
 import 'firebase_options.dart';

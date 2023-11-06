@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:instagram_clone_course/state/auth/providers/auth_state_provider.dart';
-import 'package:instagram_clone_course/views/compoents/dialogs/alert_diaglog_model.dart';
-import 'package:instagram_clone_course/views/compoents/dialogs/logout_dialog.dart';
+import 'package:instagram_clone_course/views/components/dialogs/alert_diaglog_model.dart';
+import 'package:instagram_clone_course/views/components/dialogs/logout_dialog.dart';
 import 'package:instagram_clone_course/views/constants/strings.dart';
 import 'package:instagram_clone_course/views/tabs/user_posts/user_posts_view.dart';
 

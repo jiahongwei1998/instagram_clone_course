@@ -63,5 +63,7 @@
     </dict>
   </array>
   <!-- End of the Google Sign-in Section -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>$(PRODUCT_NAME) would like to access your photos</string>
 </dict>
 </plist>

@@ -4,7 +4,7 @@ import 'package:instagram_clone_course/state/posts/providers/user_posts_provider
 import 'package:instagram_clone_course/views/components/animations/empty_contents_with_text_animiation_view.dart';
 import 'package:instagram_clone_course/views/components/animations/error_animation_view.dart';
 import 'package:instagram_clone_course/views/components/animations/loading_animation_view.dart';
-import 'package:instagram_clone_course/views/components/post/post_gird_view.dart';
+import 'package:instagram_clone_course/views/components/post/posts_gird_view.dart';
 import 'package:instagram_clone_course/views/constants/strings.dart';
 
 class UserPostsView extends ConsumerWidget {

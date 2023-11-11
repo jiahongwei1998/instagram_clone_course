@@ -41,6 +41,7 @@ class AuthStateNotifier extends StateNotifier<AuthState> {
   }
 
   Future<void> loginWihtGithub(BuildContext context) async {
+    // FIXME: loading view obscures the github login page
     state = state.copiedWithIsLoading(true);
     final result = await _authenticator.loginWithGithub(context);
     final userId = _authenticator.userId;

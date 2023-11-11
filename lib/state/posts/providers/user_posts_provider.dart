@@ -35,7 +35,7 @@ final userPostsProvider = StreamProvider.autoDispose<Iterable<Post>>((ref) {
         )
         .map(
           (doc) => Post(
-            poistId: doc.id,
+            postId: doc.id,
             json: doc.data(),
           ),
         );

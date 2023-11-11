@@ -6,7 +6,7 @@ import 'package:instagram_clone_course/state/posts/models/post_key.dart';
 
 @immutable
 class Post {
-  final String poistId;
+  final String postId;
   final String userId;
   final String message;
   final DateTime createdAt;
@@ -20,7 +20,7 @@ class Post {
   final Map<PostSetting, bool> postSettings;
 
   Post({
-    required this.poistId,
+    required this.postId,
     required Map<String, dynamic> json,
   })  : userId = json[PostKey.userId],
         message = json[PostKey.message],

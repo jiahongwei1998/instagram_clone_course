@@ -50,7 +50,7 @@ final specificPostWithCommentsProvider = StreamProvider.family
       final doc = snapshot.docs.first;
       if (doc.metadata.hasPendingWrites) return;
 
-      post = Post(poistId: doc.id, json: doc.data());
+      post = Post(postId: doc.id, json: doc.data());
       notify();
     });
 
